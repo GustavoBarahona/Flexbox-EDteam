@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Actor', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+main, aside{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    background: #333;
+    color: #eee;
+    text-align: right;
+    justify-content: right;
+}
+
+main {
+    background: #eee;
+    color: #333;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        flex-direction: column;
+    }
+
+    main, aside{
+        width: 100%;
+        min-height: 50vh;
+        justify-content: center;
+    }
+
+    aside{
+        align-items: flex-end;
+    }
+
+    main{
+        align-items: flex-start;
+    }
+}

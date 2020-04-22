@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Actor', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*vh: viewport height Alto total del viewport*/
+    /*min-height: nunca seas menos que la altura de tu viewport*/
+    background: #f6f6f6;
+}
+
+h1{
+    position: absolute; /*Esto hará que este titulo se vaya hacia arriba
+    ya que position absolute desaparece un elemento del flujo*/
+    width: 100%;
+    top: 1em;
+    left: 0;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: lightblue;
+    /* background: url("http://Lorempixel.com/500/300"); */
+    /* margin: 1em auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    box-shadow: 0 0 0 10px #fff, 0 0 0 11px #ccc, 0 20px 20px -12px #000;
+}
+
+.container:hover p {
+    top: 0;
+}
+
+.container>p {
+    
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 1em;
+    box-sizing: border-box;
+
+    position: relative;
+    top: 100%;
+
+    transition: all 0.3s;
+}
